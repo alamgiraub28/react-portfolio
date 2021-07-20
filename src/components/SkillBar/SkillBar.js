@@ -4,7 +4,7 @@ import { Container, Row, Col, Tab, Tabs, Card } from 'react-bootstrap';
 import skillPhoto from '../../img/skill-photo.jpg';
 import SkillBarDetails from '../SkillBarDetails/SkillBarDetails';
 import CountUp from 'react-countup';
-
+import VisibilitySensor from 'react-visibility-sensor';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCrown, faHandsHelping, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -183,7 +183,13 @@ const SkillBar = () => {
                         <Card className="countup-card">
                             <Card.Body>
                                 <FontAwesomeIcon className="text-secondary countUpIcon" icon={faThumbsUp} />
-                                <Card.Title className="text-light"><h1 className="text-light"><CountUp end={150000} duration={10} />+</h1></Card.Title>
+                                <Card.Title className="text-light"><h1 className="text-light"><CountUp end={150000} duration={10}>
+                                    {({ countUpRef, start }) => (
+                                        <VisibilitySensor onChange={start} delayedCall>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>+</h1></Card.Title>
                                 <Card.Text className="text-secondary">
                                     Codding
                                 </Card.Text>
@@ -194,7 +200,13 @@ const SkillBar = () => {
                         <Card className="countup-card">
                             <Card.Body>
                                 <FontAwesomeIcon className="text-secondary countUpIcon" icon={faHandsHelping} />
-                                <Card.Title className="text-light"><h1><CountUp end={150} duration={10} start={0} />+</h1></Card.Title>
+                                <Card.Title className="text-light"><h1><CountUp end={150} duration={10} start={0}>
+                                    {({ countUpRef, start }) => (
+                                        <VisibilitySensor onChange={start} delayedCall>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>+</h1></Card.Title>
                                 <Card.Text className="text-secondary">
                                     Project Done
                                 </Card.Text>
@@ -205,7 +217,13 @@ const SkillBar = () => {
                         <Card className="countup-card">
                             <Card.Body>
                                 <FontAwesomeIcon className="text-secondary countUpIcon" icon={faThumbsUp} />
-                                <Card.Title className="text-light"><h1 className="text-light"><CountUp end={90} duration={10} />+</h1></Card.Title>
+                                <Card.Title className="text-light"><h1 className="text-light"><CountUp end={90} duration={10}>
+                                    {({ countUpRef, start }) => (
+                                        <VisibilitySensor onChange={start} delayedCall>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
+                                </CountUp>+</h1></Card.Title>
                                 <Card.Text className="text-secondary">
                                     Happy Client
                                 </Card.Text>
@@ -217,6 +235,11 @@ const SkillBar = () => {
                             <Card.Body>
                                 <FontAwesomeIcon className="text-secondary countUpIcon" icon={faCrown} />
                                 <Card.Title className="text-light"><h1><CountUp end={50} duration={10}>
+                                    {({ countUpRef, start }) => (
+                                        <VisibilitySensor onChange={start} delayedCall>
+                                            <span ref={countUpRef} />
+                                        </VisibilitySensor>
+                                    )}
                                 </CountUp>+</h1></Card.Title>
                                 <Card.Text className="text-secondary">
                                     Awards
@@ -225,7 +248,7 @@ const SkillBar = () => {
                         </Card>
                     </Col>
                 </Row>
-                
+
             </Container>
         </section>
     );
