@@ -1,0 +1,42 @@
+.footer-logo{
+    width:100%;
+    color:white;
+    text-align:center;
+    font-weight:400;
+    font-size:45px;
+    letter-spacing: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    padding-top:10px;
+    width: 100%;
+}
+
+
+.footer-social-link a{
+color:#999999;
+text-decoration: none;
+margin: 0 12px;
+transition: all .5s ease;
+display: inline-block;
+border: none !important;
+}
+
+.footer-social-link a:hover{
+color: #ff9933;
+}
+
+
+.copywrite{
+    margin-top:25px;
+    margin-bottom:0;
+    font-weight:400;
+    font-size:14px;
+    text-align:center;
+    border-top:1px solid #999999;
+    color:white;
+    width: 100%;
+ }

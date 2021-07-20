@@ -1,0 +1,75 @@
+
+.sectionTitle h1{
+    display:inline-block;
+    text-transform:uppercase;
+    font-size:35px;
+    font-weight:700;
+    color:#000000;
+    padding:0;
+    margin:0;
+    padding-bottom:5px;
+    position:relative;
+}
+
+.sectionTitle h1:after{
+    content:"";
+    left:0;
+    height:2px;
+    width:61%;
+    background-color:#ff9933;
+    bottom:0;
+    position: absolute;
+}
+
+.sectionTitle p{
+    font-size:14px;
+    display:block;
+    color: #838383;
+    text-transform: uppercase;
+    padding-top:10px;
+    font-weight:500;
+}
+
+.aboutMeContent h4{
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.aboutMeContent h6{
+    font-size:18px;
+    font-weight: 600;
+    margin:0 0 5px;
+    color:#ff9933;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    }
+
+.aboutMeContent p{
+    font-size:15px;
+    line-height:24px;
+    color:#838383;
+    }
+
+
+.socialNew{
+height: 50px !important;
+width: 50px !important;
+background: #ff9933;
+padding: 10px;
+border: 1px solid #000000;
+border-radius: 6px;
+margin-right: 5px;
+cursor: pointer;
+color: #000000 !important;
+}
+
+.socialNew:hover{
+    background: #ffffff;
+    color: #ff9933;
+    border: 1px solid #ff9933;;
+}
+
+.aboutMe-social-link:hover{
+    border: none !important;
+}

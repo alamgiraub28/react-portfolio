@@ -1,0 +1,18 @@
+.heroArea{
+    background-image: url(../../img/hero-image-alamgir.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(119, 117, 117);
+    background-blend-mode: multiply;
+}
+
+.heroContent{
+padding-top: 322px;
+padding-bottom: 250px;
+}
+
+.heroContent Button:hover{
+background: #ffffff !important;
+color: #ff9933 !important;
+}
